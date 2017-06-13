@@ -1,0 +1,6 @@
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
+
+  - Created entire dist
+  - Please don't assume this works
