@@ -7,7 +7,7 @@ package DBIx::Class::DeploymentHandler::VersionStorage::WithSchema;
 use Moose;
 use DBIx::Class::DeploymentHandler::LogImporter ':log';
 use DBIx::Class::DeploymentHandler::VersionStorage::WithSchema::VersionResult;
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 has schema => (
     is => 'ro',
