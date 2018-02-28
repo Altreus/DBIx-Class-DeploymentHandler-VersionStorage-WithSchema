@@ -35,7 +35,7 @@ sub _build_version_rs {
 sub database_version {
     my $self = shift;
     my $schema = ref $self->schema;
-    return $self->version_rs->search({ schema => $schema })->latest->get_column('version');
+    return $self->version_rs->search({ schema => $schema })->get_column('version')->max;
 }
 
 sub add_database_version {

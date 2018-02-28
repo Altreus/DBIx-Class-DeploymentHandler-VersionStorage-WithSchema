@@ -18,4 +18,7 @@ standard one, and instantiate that in your script instead.
 This module implements L<DBIx::Class::DeploymentHandler::HandlesVersionStorage>
 and is similar to L<DBIx::Class::DeploymentHandler::VersionStorage::Standard>.
 
+This module relies on a patch to DeploymentHandler that is still in question.
+https://github.com/frioux/DBIx-Class-DeploymentHandler/pull/54
+
 =cut
