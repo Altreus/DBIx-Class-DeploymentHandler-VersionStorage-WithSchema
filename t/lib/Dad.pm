@@ -46,8 +46,11 @@ sub install_version_storage {
 }
  
 sub prepare_install {
-  $_[0]->prepare_deploy;
-  $_[0]->prepare_version_storage_install;
+  my ($self, %opts) = @_;
+  $self->prepare_deploy;
+  if ($opts{core}) {
+    $self->prepare_version_storage_install;
+  }
 }
  
 sub initial_version {
