@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.003     2019-03-15 19:35:41 GMT
+
+  - Change to Moo so upstream DH can use it in WithApplicatorDumple
+
 0.002     2018-05-08 21:29:42 BST
 
   - Fixed issues with getting version numbers
