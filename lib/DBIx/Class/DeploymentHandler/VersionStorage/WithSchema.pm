@@ -7,7 +7,7 @@ package DBIx::Class::DeploymentHandler::VersionStorage::WithSchema;
 use Moo;
 use DBIx::Class::DeploymentHandler::LogImporter ':log';
 use DBIx::Class::DeploymentHandler::VersionStorage::WithSchema::VersionResult;
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 has schema => (
     is => 'ro',
