@@ -48,15 +48,15 @@
    "provides" : {
       "DBIx::Class::DeploymentHandler::VersionStorage::WithSchema" : {
          "file" : "lib/DBIx/Class/DeploymentHandler/VersionStorage/WithSchema.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       },
       "DBIx::Class::DeploymentHandler::VersionStorage::WithSchema::VersionResult" : {
          "file" : "lib/DBIx/Class/DeploymentHandler/VersionStorage/WithSchema/VersionResult.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       },
       "DBIx::Class::DeploymentHandler::VersionStorage::WithSchema::VersionResultSet" : {
          "file" : "lib/DBIx/Class/DeploymentHandler/VersionStorage/WithSchema/VersionResultSet.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
@@ -71,7 +71,7 @@
          "web" : "https://github.com/Altreus/DBIx-Class-DeploymentHandler-VersionStorage-WithSchema"
       }
    },
-   "version" : "0.003",
+   "version" : "0.004",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.026000"
@@ -260,7 +260,7 @@
                   "branch" : null,
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "v0.003",
+                  "tag" : "v0.004",
                   "tag_format" : "v%v",
                   "tag_message" : "v%v"
                },
