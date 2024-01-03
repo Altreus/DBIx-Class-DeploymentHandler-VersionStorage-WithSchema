@@ -1,9 +1,9 @@
 package Dad;
 
-use Moo;
+use Moose;
 extends 'DBIx::Class::DeploymentHandler::Dad';
 
-use MooX::Role::Parameterized::With 'DBIx::Class::DeploymentHandler::WithApplicatorDumple' => {
+with 'DBIx::Class::DeploymentHandler::WithApplicatorDumple' => {
     interface_role       => 'DBIx::Class::DeploymentHandler::HandlesDeploy',
     class_name           => 'DBIx::Class::DeploymentHandler::DeployMethod::SQL::Translator',
     delegate_name        => 'deploy_method',
@@ -33,7 +33,7 @@ sub prepare_version_storage_install {
     result_source => $self->version_storage->version_rs->result_source
   });
 }
- 
+
 sub install_version_storage {
   my $self = shift;
  
@@ -44,7 +44,7 @@ sub install_version_storage {
     version       => $version,
   });
 }
- 
+
 sub prepare_install {
   my ($self, %opts) = @_;
   $self->prepare_deploy;
@@ -52,7 +52,7 @@ sub prepare_install {
     $self->prepare_version_storage_install;
   }
 }
- 
+
 sub initial_version {
     1
 }
