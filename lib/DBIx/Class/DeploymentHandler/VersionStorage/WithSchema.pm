@@ -64,6 +64,10 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
+=head1 NAME
+
+DBIx::Class::DeploymentHandler::VersionStorage::WithSchema - Version storage for DeploymentHandler that includes the schema
+
 =head1 DESCRIPTION
 
 The standard DeploymentHandler storage only stores the version of the schema.
