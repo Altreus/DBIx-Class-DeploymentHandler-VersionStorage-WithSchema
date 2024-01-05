@@ -4,7 +4,7 @@ package DBIx::Class::DeploymentHandler::VersionStorage::WithSchema;
 
 # ABSTRACT: Version storage for DeploymentHandler that includes the schema
 
-use Moo;
+use Moose;
 use DBIx::Class::DeploymentHandler::LogImporter ':log';
 use DBIx::Class::DeploymentHandler::VersionStorage::WithSchema::VersionResult;
 our $VERSION = '0.005';
